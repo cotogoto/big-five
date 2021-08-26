@@ -107,16 +107,11 @@ const TestCtrl = {
                 console.log("neuroticism:" + neuroticism);
                 console.log("openness:" + openness);
                 // console.log("count:" + count);
-                // 外向性 (E: Extroversion)
-                // 協調性 (A: Agreeableness)
-                // 勤勉性 (C: Conscientiousness)
-                // 情緒不安定性 (N: Neuroticism)
-                // 経験への開放性 (O: Openness to Experience)
                 const data = {
-                    labels: ['外向性', '協調性', '勤勉性', '情緒不安定性', '経験への開放性'],
+                    labels: ['A:協調性', 'C:勤勉性', 'E:外向性', 'N:情緒不安定性', 'O:経験への開放性'],
                     datasets: [{
                         label: 'Big Five',
-                        data: [extroversion, agreeableness, conscientiousness, neuroticism, openness]
+                        data: [agreeableness, conscientiousness, extroversion, neuroticism, openness]
                     }]
                 }
 
@@ -148,6 +143,26 @@ const TestCtrl = {
                     document.getElementById('myChart'),
                     config
                 );
+
+
+
+                // 協調性 (A: Agreeableness)
+                // 勤勉性 (C: Conscientiousness)
+                // 外向性 (E: Extroversion)
+                // 情緒不安定性 (N: Neuroticism)
+                // 経験への開放性 (O: Openness to Experience)
+
+                // AC
+                // AE
+                // AN
+                // AO
+                // CE
+                // CN
+                // CO
+                // EN
+                // EO
+                // NO
+
             })
             // Ajaxリクエストが失敗した時発動
             .fail( (jqXHR, textStatus, errorThrown) => {
