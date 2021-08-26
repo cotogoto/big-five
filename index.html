@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="LivLog llc.">
+  <title>Emotional Expression · LivLog llc.</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="canonical" href="https://livlog-llc.github.io/emotional-expression/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom styles for this template -->
+  <link href="./assets/css/carousel.css" rel="stylesheet">
+  <link href="./assets/css/sticky-footer-navbar.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+    
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Emotional Expression</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="./assets/img/top-image.jpg" alt="top">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 class="display-4">Emotional Expression</h1>
+              <br>
+              <p>テキストから筆者の感情分類を推定してみましょう。Emotional Expressionは、49種類の感情分類から、その筆者の感情を推測します。</p>
+              <p>Let's estimate the author's emotion classification from the text. Emotional Expression infers the author's emotions from 49 types of emotion classification.(Japanese only)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="mb-3">
+        <h2>実際に試してみましょう！</h2>
+        <p>まずは、あなた自身が書いたテキスト（文章）が必要です。日々の経験や考えている事等に言及していれば、推定精度がより高くなります。</p>
+        <p>お試しで利用してみる場合は、より正確な分析のために、長い文章が必要となります。</p>
+      </div>
+      
+      <div class="mb-3 ps-lg-4">
+        <p>【サンプルテキスト】</p>
+        <button id="wagahaiwaNekodearu" type="button" class="btn btn-outline-primary">吾輩は猫である（夏目漱石）</button>
+        <button id="sanshiro" type="button" class="btn btn-outline-success">三四郎（夏目漱石）</button>
+        <button id="freeText" type="button" class="btn btn-outline-warning">任意のテキスト</button>
+      </div>
+
+      <div class="mb-3">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="inputCheck" id="inputCheckText" value="1" checked>
+          <label class="form-check-label" for="inputCheckText">
+            テキスト入力
+          </label>
+        </div>
+        <textarea class="form-control" id="inputText" rows="7"></textarea>
+      </div>
+      <div class="mb-3">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="inputCheck" id="inputCheckUrl" value="2" >
+          <label class="form-check-label" for="inputCheckUrl">
+            URL入力
+          </label>
+        </div>
+        <input type="url" class="form-control" id="inputUrl" placeholder="https://example.com">
+      </div>
+      <div class="mb-3">
+        <button id="send" type="button" class="btn btn-primary">分析</button>
+      </div>
+      <div class="mb-3">
+        <div id="result" class="text-center"></div>
+      </div>
+
+      <div class="mb-3">
+        <p>こちらの感情表現の分類をするために「長岡技術科学大学」の「<a href="http://www.jnlp.org/SNOW/D18" target="_blank">日本語感情表現辞書</a>」を利用させていただきました。</p>
+        <p></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bd-footer p-3 p-md-5 mt-5 bg-light text-center text-sm-start">
+    <div class="container">
+      <div class="d-lg-flex justify-content-between text-center">
+        <div>
+          <p class="mb-0">
+            © 2020 <a href="https://livlog.jp/" target="_blank">LivLog llc.</a> All rights reserved.
+          </p>
+        </div>
+        <div class="text-lg-right mt-3 mt-lg-0">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/logdown/logdown.min.js"></script>
+  <script src="./assets/app/util.js"></script>
+  <script src="./assets/app/app.js"></script>
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49778613-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
