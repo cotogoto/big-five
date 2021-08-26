@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="LivLog llc.">
-  <title>Emotional Expression · LivLog llc.</title>
+  <title>Big Five · LivLog llc.</title>
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="canonical" href="https://livlog-llc.github.io/emotional-expression/">
@@ -24,7 +24,7 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Emotional Expression</a>
+        <a class="navbar-brand" href="#">Big Five</a>
         </div>
       </div>
     </nav>
@@ -38,10 +38,10 @@
           <img class="bd-placeholder-img" width="100%" height="100%" src="./assets/img/top-image.jpg" alt="top">
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1 class="display-4">Emotional Expression</h1>
+              <h1 class="display-4">Big Five</h1>
               <br>
-              <p>テキストから筆者の感情分類を推定してみましょう。Emotional Expressionは、49種類の感情分類から、その筆者の感情を推測します。</p>
-              <p>Let's estimate the author's emotion classification from the text. Emotional Expression infers the author's emotions from 49 types of emotion classification.(Japanese only)</p>
+              <p>テキストから筆者の感情分類を推定してみましょう。ビッグファイブ理論は、人間の性格は大まかに５つの因子（特性）で過不足なく表現できるという考え方で、1990年代に米オレゴン大学の名誉教授でもある ルイス・R・ゴールドバーク氏によって提唱されました。</p>
+              <p>Let's estimate the author's emotion classification from the text. The Big Five theory is based on the idea that human character can be roughly expressed by five factors (characteristics), and was proposed by his Professor Emeritus Luis R. Goldberg of the University of Oregon in the 1990s. I did.(Japanese only)</p>
             </div>
           </div>
         </div>
@@ -84,11 +84,11 @@
         <button id="send" type="button" class="btn btn-primary">分析</button>
       </div>
       <div class="mb-3">
-        <div id="result" class="text-center"></div>
+        <canvas id="myChart" width="600" height="600"></canvas>
       </div>
 
       <div class="mb-3">
-        <p>こちらの感情表現の分類をするために「長岡技術科学大学」の「<a href="http://www.jnlp.org/SNOW/D18" target="_blank">日本語感情表現辞書</a>」を利用させていただきました。</p>
+        <p>こちらのBigFiveの分類をするために「<a href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2015/0/JSAI2015_4J15/_article/-char/ja/" target="_blank">感情判断とBig Fiveを用いたブログ著者の性格推定に関する調査</a>」を参考にさせていただきました。</p>
         <p></p>
       </div>
     </div>
@@ -99,7 +99,7 @@
       <div class="d-lg-flex justify-content-between text-center">
         <div>
           <p class="mb-0">
-            © 2020 <a href="https://livlog.jp/" target="_blank">LivLog llc.</a> All rights reserved.
+            © 2021 <a href="https://livlog.jp/" target="_blank">LivLog llc.</a> All rights reserved.
           </p>
         </div>
         <div class="text-lg-right mt-3 mt-lg-0">
@@ -109,7 +109,7 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/libs/logdown/logdown.min.js"></script>
   <script src="./assets/app/util.js"></script>
