@@ -144,13 +144,37 @@ const TestCtrl = {
                     config
                 );
 
-
-
                 // 協調性 (A: Agreeableness)
+                if (agreeableness >= 50) {
+
+                } else {
+
+                }
                 // 勤勉性 (C: Conscientiousness)
+                if (conscientiousness >= 50) {
+
+                } else {
+
+                }
                 // 外向性 (E: Extroversion)
+                if (extroversion >= 50) {
+
+                } else {
+
+                }
                 // 情緒不安定性 (N: Neuroticism)
+                if (neuroticism >= 50) {
+
+                } else {
+
+                }
                 // 経験への開放性 (O: Openness to Experience)
+                if (openness >= 50) {
+
+                } else {
+
+                }
+                
 
                 // AC
                 // AE
