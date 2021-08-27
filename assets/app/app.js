@@ -297,7 +297,7 @@ const TestCtrl = {
             })
             // Ajaxリクエストが失敗した時発動
             .fail( (jqXHR, textStatus, errorThrown) => {
-                alert('感情分類の推定に失敗しました。');
+                alert('ビッグファイブ解析の推定に失敗しました。');
                 console.log("ajax通信に失敗しました");
                 console.log("jqXHR          : " + jqXHR.status); // HTTPステータスが取得
                 console.log("textStatus     : " + textStatus);    // タイムアウト、パースエラー
