@@ -83,13 +83,77 @@
       <div class="mb-3">
         <button id="send" type="button" class="btn btn-primary">分析</button>
       </div>
-      <div class="mb-3">
-        <canvas id="myChart" width="600" height="600"></canvas>
+      <div id="disp1" class="mb-3" style="display: none;">
+        <canvas id="myChart" width="500" height="500"></canvas>
       </div>
-
-      <div class="mb-3">
-        <p>こちらのBigFiveの分類をするために「<a href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2015/0/JSAI2015_4J15/_article/-char/ja/" target="_blank">感情判断とBig Fiveを用いたブログ著者の性格推定に関する調査</a>」を参考にさせていただきました。</p>
-        <p></p>
+      <div id="disp2" class="mb-3" style="display: none;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 30px;">#</th>
+              <th scope="col">複合的なパーソナリティ</th>
+              <th scope="col">診断結果</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>協調性×誠実性</td>
+              <td id="AC"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>協調性×外向性</td>
+              <td id="AE"></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>協調性×神経症傾向</td>
+              <td id="AN"></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>協調性×開放性</td>
+              <td id="AO"></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>誠実性×外向性</td>
+              <td id="CE"></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>誠実性×神経症傾向</td>
+              <td id="CN"></td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>誠実性×開放性</td>
+              <td id="CO"></td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>外向性×神経症傾向</td>
+              <td id="EN"></td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>外向性×開放性</td>
+              <td id="EO"></td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>神経症傾向×開放性</td>
+              <td id="NO"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="disp3" class="mb-3" style="display: none;">
+        <p>
+          こちらのBigFiveの分類をするために「<a href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2015/0/JSAI2015_4J15/_article/-char/ja/" target="_blank">感情判断とBig Fiveを用いたブログ著者の性格推定に関する調査</a>」を参考にさせていただきました。
+          <br>
+          こちらの表については、Wikipediaの「<a href="https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%83%E3%82%B0%E3%83%95%E3%82%A1%E3%82%A4%E3%83%96_(%E5%BF%83%E7%90%86%E5%AD%A6)" target="_blank">複合的なパーソナリティについては</a>」を参考にさせていただきました。</p>
       </div>
     </div>
   </main>

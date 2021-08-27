@@ -140,3 +140,25 @@ function getUrlVars() {
 
     return vars;
 }
+
+var sum = function(arr, fn) {
+    if (fn) {
+        return sum(arr.map(fn));
+    }
+    else {
+        return arr.reduce(function(prev, current, i, arr) {
+                return prev+current;
+        });
+    }
+};
+var average = function(arr, fn) {
+    return sum(arr, fn)/arr.length;
+};
+var median = function(arr, fn) {
+    var half = (arr.length/2)|0;
+    var temp = arr.sort(fn);
+    if (temp.length%2) {
+        return temp[half];
+    }
+    return (temp[half-1] + temp[half])/2;
+};
