@@ -55,7 +55,6 @@ const TestCtrl = {
             // 処理開始
             $('#disp1').hide();
             $('#disp2').hide();
-            $('#disp3').hide();
             if (TestCtrl._myChart != null) {
                 TestCtrl._myChart.destroy();
             }
@@ -308,7 +307,6 @@ const TestCtrl = {
                 $('#send').prop('disabled', false);
                 $('#disp1').show();
                 $('#disp2').show();
-                $('#disp3').show();
             });
             // 処理終了
         }
