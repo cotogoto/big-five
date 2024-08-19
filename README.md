@@ -2,4 +2,4 @@
 
 テキストから筆者の感情分類を推定してみましょう。ビッグファイブ理論は、人間の性格は大まかに５つの因子（特性）で過不足なく表現できるという考え方で、1990年代に米オレゴン大学の名誉教授でもある ルイス・R・ゴールドバーク氏によって提唱されました。
 
-https://big-five.cotogoto.ai/
+[https://big-five.cotogoto.ai/](https://protopedia.net/prototype/2387)
